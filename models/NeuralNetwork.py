@@ -38,3 +38,6 @@ class NeuralNetwork(torch.nn.Module):
         for sub_module in self:
             if isinstance(sub_module, torch.nn.Conv2d):
                 torch.nn.init.xavier_uniform_(sub_module.weight)
+
+if __name__ == '__main__':
+    pass
